@@ -11,15 +11,7 @@ public class Scale : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _isScaling = !_isScaling;
-        }
-
-        if (_isScaling)
-        {
             ScaleObject();
-        }
     }
 
     private void ScaleObject()
