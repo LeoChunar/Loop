@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scale : MonoBehaviour
+public class Scaler : MonoBehaviour
 {
     [SerializeField] private float _scaleSpeed;
     [SerializeField] private float _scaleFactor;
@@ -16,7 +16,8 @@ public class Scale : MonoBehaviour
 
     private void ScaleObject()
     {
-        transform.localScale += new Vector3(_scaleSpeed * _scaleFactor * Time.deltaTime,
-         _scaleSpeed * _scaleFactor * Time.deltaTime, _scaleSpeed * _scaleFactor * Time.deltaTime);
+        // transform.localScale += new Vector3(_scaleSpeed * _scaleFactor * Time.deltaTime,
+        //  _scaleSpeed * _scaleFactor * Time.deltaTime, _scaleSpeed * _scaleFactor * Time.deltaTime);
+        transform.localScale += Vector3.one * _scaleSpeed * _scaleFactor * Time.deltaTime;
     }
 }
